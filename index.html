@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <header class="header">
+      <h1>Interactive Web Page</h1>
+      <button id="themeToggle" class="btn primary">Toggle Dark Mode</button>
+    </header>
+
+    <section class="card" id="counterSection">
+      <h2>Click Counter</h2>
+      <button id="countBtn" class="btn secondary">Click Me</button>
+      <p class="result">You've clicked <span id="clickCount">0</span> times.</p>
+    </section>
+
+    <section class="card">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <button class="faq-toggle btn tertiary">What is this site?</button>
+        <p class="faq-answer hidden">This is a demo showing how JavaScript makes web pages interactive.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Contact Form</h2>
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" id="name" />
+          <span class="error" id="nameError"></span>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="email" />
+          <span class="error" id="emailError"></span>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="password" />
+          <span class="error" id="passwordError"></span>
+        </div>
+        <button type="submit" class="btn primary">Submit</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
